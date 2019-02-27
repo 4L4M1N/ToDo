@@ -1,0 +1,97 @@
+H:\Work_Space\ToDo\bin\Debug\netcoreapp2.2\ToDo.deps.json
+H:\Work_Space\ToDo\bin\Debug\netcoreapp2.2\ToDo.runtimeconfig.json
+H:\Work_Space\ToDo\bin\Debug\netcoreapp2.2\ToDo.runtimeconfig.dev.json
+H:\Work_Space\ToDo\bin\Debug\netcoreapp2.2\ToDo.dll
+H:\Work_Space\ToDo\bin\Debug\netcoreapp2.2\ToDo.pdb
+H:\Work_Space\ToDo\bin\Debug\netcoreapp2.2\ToDo.Views.dll
+H:\Work_Space\ToDo\bin\Debug\netcoreapp2.2\ToDo.Views.pdb
+H:\Work_Space\ToDo\obj\Debug\netcoreapp2.2\ToDo.csprojAssemblyReference.cache
+H:\Work_Space\ToDo\obj\Debug\netcoreapp2.2\ToDo.csproj.CoreCompileInputs.cache
+H:\Work_Space\ToDo\obj\Debug\netcoreapp2.2\ToDo.RazorAssemblyInfo.cache
+H:\Work_Space\ToDo\obj\Debug\netcoreapp2.2\ToDo.RazorAssemblyInfo.cs
+H:\Work_Space\ToDo\obj\Debug\netcoreapp2.2\ToDo.AssemblyInfoInputs.cache
+H:\Work_Space\ToDo\obj\Debug\netcoreapp2.2\ToDo.AssemblyInfo.cs
+H:\Work_Space\ToDo\obj\Debug\netcoreapp2.2\ToDo.TagHelpers.input.cache
+H:\Work_Space\ToDo\obj\Debug\netcoreapp2.2\ToDo.TagHelpers.output.cache
+H:\Work_Space\ToDo\obj\Debug\netcoreapp2.2\ToDo.RazorCoreGenerate.cache
+H:\Work_Space\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+H:\Work_Space\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+H:\Work_Space\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+H:\Work_Space\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+H:\Work_Space\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+H:\Work_Space\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+H:\Work_Space\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+H:\Work_Space\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+H:\Work_Space\ToDo\obj\Debug\netcoreapp2.2\ToDo.RazorTargetAssemblyInfo.cache
+H:\Work_Space\ToDo\obj\Debug\netcoreapp2.2\ToDo.RazorTargetAssemblyInfo.cs
+H:\Work_Space\ToDo\obj\Debug\netcoreapp2.2\ToDo.Views.pdb
+H:\Work_Space\ToDo\obj\Debug\netcoreapp2.2\ToDo.dll
+H:\Work_Space\ToDo\obj\Debug\netcoreapp2.2\ToDo.pdb
+H:\Work_Space\ToDo\obj\Debug\netcoreapp2.2\ToDo.csproj.CopyComplete
+H:\Work_Space\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\Registration\Index.g.cshtml.cs
+H:\Work_Space\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\Task\Index.g.cshtml.cs
+h:\Work_Space\ToDo\ToDo\obj\Debug\netcoreapp2.2\ToDo.csprojAssemblyReference.cache
+h:\Work_Space\ToDo\ToDo\obj\Debug\netcoreapp2.2\ToDo.csproj.CoreCompileInputs.cache
+h:\Work_Space\ToDo\ToDo\obj\Debug\netcoreapp2.2\ToDo.RazorAssemblyInfo.cache
+h:\Work_Space\ToDo\ToDo\obj\Debug\netcoreapp2.2\ToDo.RazorAssemblyInfo.cs
+h:\Work_Space\ToDo\ToDo\obj\Debug\netcoreapp2.2\ToDo.AssemblyInfoInputs.cache
+h:\Work_Space\ToDo\ToDo\obj\Debug\netcoreapp2.2\ToDo.AssemblyInfo.cs
+h:\Work_Space\ToDo\ToDo\obj\Debug\netcoreapp2.2\ToDo.TagHelpers.input.cache
+h:\Work_Space\ToDo\ToDo\obj\Debug\netcoreapp2.2\ToDo.TagHelpers.output.cache
+h:\Work_Space\ToDo\ToDo\obj\Debug\netcoreapp2.2\ToDo.RazorCoreGenerate.cache
+h:\Work_Space\ToDo\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+h:\Work_Space\ToDo\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+h:\Work_Space\ToDo\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\Registration\Index.g.cshtml.cs
+h:\Work_Space\ToDo\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+h:\Work_Space\ToDo\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+h:\Work_Space\ToDo\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+h:\Work_Space\ToDo\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+h:\Work_Space\ToDo\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\Task\Index.g.cshtml.cs
+h:\Work_Space\ToDo\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+h:\Work_Space\ToDo\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+h:\Work_Space\ToDo\ToDo\obj\Debug\netcoreapp2.2\ToDo.RazorTargetAssemblyInfo.cache
+h:\Work_Space\ToDo\ToDo\obj\Debug\netcoreapp2.2\ToDo.RazorTargetAssemblyInfo.cs
+h:\Work_Space\ToDo\ToDo\obj\Debug\netcoreapp2.2\ToDo.Views.pdb
+h:\Work_Space\ToDo\ToDo\obj\Debug\netcoreapp2.2\ToDo.dll
+h:\Work_Space\ToDo\ToDo\obj\Debug\netcoreapp2.2\ToDo.pdb
+H:\Work_Space\ToDo\ToDo\bin\Debug\netcoreapp2.2\ToDo.deps.json
+H:\Work_Space\ToDo\ToDo\bin\Debug\netcoreapp2.2\ToDo.runtimeconfig.json
+H:\Work_Space\ToDo\ToDo\bin\Debug\netcoreapp2.2\ToDo.runtimeconfig.dev.json
+H:\Work_Space\ToDo\ToDo\bin\Debug\netcoreapp2.2\ToDo.dll
+H:\Work_Space\ToDo\ToDo\bin\Debug\netcoreapp2.2\ToDo.pdb
+H:\Work_Space\ToDo\ToDo\bin\Debug\netcoreapp2.2\ToDo.Views.dll
+H:\Work_Space\ToDo\ToDo\bin\Debug\netcoreapp2.2\ToDo.Views.pdb
+H:\Work_Space\ToDo\ToDo\obj\Debug\netcoreapp2.2\ToDo.csproj.CopyComplete
+h:\Work_Space\My Projects\ToDo\bin\Debug\netcoreapp2.2\ToDo.deps.json
+h:\Work_Space\My Projects\ToDo\bin\Debug\netcoreapp2.2\ToDo.runtimeconfig.json
+h:\Work_Space\My Projects\ToDo\bin\Debug\netcoreapp2.2\ToDo.runtimeconfig.dev.json
+h:\Work_Space\My Projects\ToDo\bin\Debug\netcoreapp2.2\ToDo.dll
+h:\Work_Space\My Projects\ToDo\bin\Debug\netcoreapp2.2\ToDo.pdb
+h:\Work_Space\My Projects\ToDo\bin\Debug\netcoreapp2.2\ToDo.Views.dll
+h:\Work_Space\My Projects\ToDo\bin\Debug\netcoreapp2.2\ToDo.Views.pdb
+h:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\ToDo.csprojAssemblyReference.cache
+h:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\ToDo.csproj.CoreCompileInputs.cache
+h:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\ToDo.RazorAssemblyInfo.cache
+h:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\ToDo.RazorAssemblyInfo.cs
+h:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\ToDo.AssemblyInfoInputs.cache
+h:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\ToDo.AssemblyInfo.cs
+h:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\ToDo.TagHelpers.input.cache
+h:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\ToDo.TagHelpers.output.cache
+h:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\ToDo.RazorCoreGenerate.cache
+h:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+h:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+h:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\Registration\Index.g.cshtml.cs
+h:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+h:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+h:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+h:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+h:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\Task\Index.g.cshtml.cs
+h:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+h:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+h:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\ToDo.RazorTargetAssemblyInfo.cache
+h:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\ToDo.RazorTargetAssemblyInfo.cs
+h:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\ToDo.Views.pdb
+h:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\ToDo.dll
+h:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\ToDo.pdb
+h:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\ToDo.csproj.CopyComplete
+H:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\Task\success.g.cshtml.cs

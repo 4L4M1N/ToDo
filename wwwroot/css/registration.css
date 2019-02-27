@@ -1,0 +1,13 @@
+h1{ text-align: center; color: green; }
+#btn-signin{
+    position: absolute;
+    left: 270px;
+}
+.line{
+    position: absolute;
+    z-index: -1;
+}
+.lineTwo{
+    position: absolute;
+    z-index: -1;
+}
