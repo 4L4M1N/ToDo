@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using ToDo.DataAccessLayer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Sqlite;
+using Microsoft.AspNetCore.Mvc.Razor;
 
 namespace ToDo
 {
@@ -33,9 +34,14 @@ namespace ToDo
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
+            services.AddLocalization(options => {options.ResourcesPath = "Resources";});
 
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
+            .AddViewLocalization( //localization
+                LanguageViewLocationExpanderFormat.Suffix, 
+                opts => {opts.ResourcesPath = "Resources";})
+            .AddDataAnnotationsLocalization();
             services.AddDbContext<TodoDbContext>(options => options.UseSqlite(Configuration.GetConnectionString("ToDoContext")));
         }
 
