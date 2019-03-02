@@ -33,6 +33,11 @@
         "runtime": {
           "ToDo.dll": {}
         },
+        "resources": {
+          "bn/ToDo.resources.dll": {
+            "locale": "bn"
+          }
+        },
         "compile": {
           "ToDo.dll": {}
         }

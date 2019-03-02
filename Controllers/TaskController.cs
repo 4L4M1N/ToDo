@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ToDo.Models;
 using ToDo.DataAccessLayer;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Http;
 
 namespace ToDo.Controllers
 {
@@ -21,7 +23,7 @@ namespace ToDo.Controllers
         {
             return View();
         }
-        
+        /* 
         [HttpPost]
         public async Task<IActionResult> Create( Work addWork)
         {
@@ -33,6 +35,20 @@ namespace ToDo.Controllers
                 return RedirectToAction(nameof(Index));
             }
             return View();
+        }*/
+
+        //localization cookies
+        [HttpPost]
+         public IActionResult SetLanguage(string culture, string returnUrl)
+        {
+            Response.Cookies.Append(
+                CookieRequestCultureProvider.DefaultCookieName,
+                CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),
+                new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(1) }
+            );
+
+            return LocalRedirect(returnUrl);
         }
+
     }
 }
