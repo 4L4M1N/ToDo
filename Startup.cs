@@ -13,6 +13,9 @@ using ToDo.DataAccessLayer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Sqlite;
 using Microsoft.AspNetCore.Mvc.Razor;
+using System.Globalization;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.Extensions.Options;
 
 namespace ToDo
 {
@@ -34,6 +37,24 @@ namespace ToDo
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
+            //RequestLocalizationMiddleware middleware injected for Localization
+            services.Configure<RequestLocalizationOptions>(
+                options =>
+                {
+                    var supportedCultures = new List<CultureInfo>
+                    {
+                        new CultureInfo("en-GB"),
+                        new CultureInfo("en-US"),
+                        new CultureInfo("bn-BD"),
+                    };
+                    options.DefaultRequestCulture = new RequestCulture("en-GB"); //default culture
+                    //Formatting numbers, dates, etc.
+                    options.SupportedCultures = supportedCultures;
+                    //UI Strings that we have localized.
+                    options.SupportedUICultures = supportedCultures;
+
+                }
+            );
             services.AddLocalization(options => {options.ResourcesPath = "Resources";});
 
 
@@ -43,6 +64,7 @@ namespace ToDo
                 opts => {opts.ResourcesPath = "Resources";})
             .AddDataAnnotationsLocalization();
             services.AddDbContext<TodoDbContext>(options => options.UseSqlite(Configuration.GetConnectionString("ToDoContext")));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -61,7 +83,9 @@ namespace ToDo
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            var options = app.ApplicationServices.GetService<IOptions<RequestLocalizationOptions>>();
             app.UseCookiePolicy();
+            
 
             app.UseMvc(routes =>
             {
