@@ -101,3 +101,4 @@ H:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\bn\ToDo.resources.dll
 H:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_SelectLanguagePartial.g.cshtml.cs
 h:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\bn\ToDo.resources.cs
 H:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\ToDo.Resources.Views.Task.Index.bn.resources
+H:\Work_Space\My Projects\ToDo\obj\Debug\netcoreapp2.2\ToDo.Resources.Views.Shared._Layout.bn.resources

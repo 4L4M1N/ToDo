@@ -38,28 +38,24 @@ namespace ToDo
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
             services.AddLocalization(options => {options.ResourcesPath = "Resources";});
-            //RequestLocalizationMiddleware middleware injected for Localization
-            services.Configure<RequestLocalizationOptions>(
-                options =>
-                {
-                    var supportedCultures = new List<CultureInfo>
+            services.AddMvc()
+                .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+                .AddDataAnnotationsLocalization();
+            //RequestLocalizationMiddleware middleware injected for Localization bn-BD
+            services.Configure<RequestLocalizationOptions>(options =>
+            {
+                var supportedCultures = new List<CultureInfo>
                     {
-                        new CultureInfo("en-GB"),
                         new CultureInfo("en-US"),
-                        new CultureInfo("bn-BD"),
+                        new CultureInfo("bn-BD")
                     };
-                    options.DefaultRequestCulture = new RequestCulture("en-GB"); //default culture
-                    //Formatting numbers, dates, etc.
-                    options.SupportedCultures = supportedCultures;
-                    //UI Strings that we have localized.
-                    options.SupportedUICultures = supportedCultures;
 
-                }
-            );
+                options.DefaultRequestCulture = new RequestCulture("en-US");
+                options.SupportedCultures = supportedCultures;
+                options.SupportedUICultures = supportedCultures;
+            });
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
-            .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
-            .AddDataAnnotationsLocalization();
+
             services.AddDbContext<TodoDbContext>(options => options.UseSqlite(Configuration.GetConnectionString("ToDoContext")));
 
         }
@@ -78,8 +74,31 @@ namespace ToDo
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            #region snippet2
+            var supportedCultures = new[]
+            {
+                new CultureInfo("en-US"),
+                new CultureInfo("bn-BD"),
+            };
+
+            app.UseRequestLocalization(new RequestLocalizationOptions
+            {
+                DefaultRequestCulture = new RequestCulture("en-US"),
+                // Formatting numbers, dates, etc.
+                SupportedCultures = supportedCultures,
+                // UI strings that we have localized.
+                SupportedUICultures = supportedCultures
+            });
+
             app.UseStaticFiles();
+            // To configure external authentication, 
+            // see: http://go.microsoft.com/fwlink/?LinkID=532715
+            app.UseAuthentication();
+            app.UseMvcWithDefaultRoute();
+            #endregion
+
+            app.UseStaticFiles();
+
             app.UseRequestLocalization();
             app.UseCookiePolicy();
             
