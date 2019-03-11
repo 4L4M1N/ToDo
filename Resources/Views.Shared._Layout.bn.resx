@@ -123,4 +123,10 @@
   <data name="About" xml:space="preserve">
     <value>সম্পর্কে</value>
   </data>
+  <data name="Login" xml:space="preserve">
+    <value>লগইন</value>
+  </data>
+  <data name="Crate New Account" xml:space="preserve">
+    <value>একাউন্ট খুলুন</value>
+  </data>
 </root>

@@ -1,5 +1,41 @@
-.vscode*
+.vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.lo
+*.la
+*.rej
+*.pyc
+*.pyo
+*.mo
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Buildout generated folders #
+##############################
+bin
+parts
+develop-eggs
+var
+lib
+include

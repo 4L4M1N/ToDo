@@ -14,11 +14,11 @@ namespace ToDo.Controllers
     public class TaskController : Controller
     {
         
-        private readonly TodoDbContext _db;
+        /* *private readonly TodoDbContext _db;
         public TaskController(TodoDbContext db)
         {
             _db = db;
-        }
+        }*/
         public IActionResult Index()
         {
             return View();

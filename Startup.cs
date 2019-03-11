@@ -1,21 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using ToDo.DataAccessLayer;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Sqlite;
-using Microsoft.AspNetCore.Mvc.Razor;
-using System.Globalization;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.Extensions.Options;
+
 
 namespace ToDo
 {
@@ -31,32 +31,30 @@ namespace ToDo
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.Configure<CookiePolicyOptions>(options =>
-            {
-                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
-                options.CheckConsentNeeded = context => true;
-                options.MinimumSameSitePolicy = SameSiteMode.None;
-            });
-            services.AddLocalization(options => {options.ResourcesPath = "Resources";});
+
+            
+
+            //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddLocalization(opts => { opts.ResourcesPath = "Resources"; });
+
             services.AddMvc()
-                .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+                .AddViewLocalization(
+                    LanguageViewLocationExpanderFormat.Suffix,
+                    opts => { opts.ResourcesPath = "Resources"; })
                 .AddDataAnnotationsLocalization();
-            //RequestLocalizationMiddleware middleware injected for Localization bn-BD
-            services.Configure<RequestLocalizationOptions>(options =>
-            {
-                var supportedCultures = new List<CultureInfo>
+
+            services.Configure<RequestLocalizationOptions>(
+                options =>
+                {
+                    var supportedCultures = new List<CultureInfo>
                     {
                         new CultureInfo("en-US"),
-                        new CultureInfo("bn-BD")
+                        new CultureInfo("bn")
                     };
-
-                options.DefaultRequestCulture = new RequestCulture("en-US");
-                options.SupportedCultures = supportedCultures;
-                options.SupportedUICultures = supportedCultures;
-            });
-
-
-            services.AddDbContext<TodoDbContext>(options => options.UseSqlite(Configuration.GetConnectionString("ToDoContext")));
+                    options.DefaultRequestCulture = new RequestCulture("en-US");
+                    options.SupportedCultures = supportedCultures;
+                    options.SupportedUICultures = supportedCultures;
+                });
 
         }
 
@@ -74,34 +72,12 @@ namespace ToDo
                 app.UseHsts();
             }
 
-            #region snippet2
-            var supportedCultures = new[]
-            {
-                new CultureInfo("en-US"),
-                new CultureInfo("bn-BD"),
-            };
-
-            app.UseRequestLocalization(new RequestLocalizationOptions
-            {
-                DefaultRequestCulture = new RequestCulture("en-US"),
-                // Formatting numbers, dates, etc.
-                SupportedCultures = supportedCultures,
-                // UI strings that we have localized.
-                SupportedUICultures = supportedCultures
-            });
-
-            app.UseStaticFiles();
-            // To configure external authentication, 
-            // see: http://go.microsoft.com/fwlink/?LinkID=532715
-            app.UseAuthentication();
-            app.UseMvcWithDefaultRoute();
-            #endregion
 
             app.UseStaticFiles();
 
-            app.UseRequestLocalization();
-            app.UseCookiePolicy();
-            
+
+
+            app.UseRequestLocalization(app.ApplicationServices.GetService<IOptions<RequestLocalizationOptions>>().Value);
 
             app.UseMvc(routes =>
             {
