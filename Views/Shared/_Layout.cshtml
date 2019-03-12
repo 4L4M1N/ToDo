@@ -72,17 +72,19 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="row">
-            <div class="col-md-6">
-                <p>&copy; @System.DateTime.Now.Year - Localization</p>
-            </div>
-        <div class="col-md-6 text-right">
-                @await Html.PartialAsync("_SelectLanguagePartial")
-        </div>
-        </div>
+    <div class="container body-content" style="margin-top:60px">
+        <footer>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; @System.DateTime.Now.Year - Localization</p>
+                </div>
+                <div class="col-md-6 text-right">
+                    @await Html.PartialAsync("_SelectLanguagePartial")
 
-    </footer>
+                </div>
+            </div>
+        </footer>
+    </div>
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
