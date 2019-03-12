@@ -72,15 +72,16 @@
         </main>
     </div>
 
-    <div class="container body-content" style="margin-top:60px">
+ <div class="container body-content" style="margin-top:60px">
         <footer>
             <div class="row">
                 <div class="col-md-6">
                     <p>&copy; @System.DateTime.Now.Year - Localization</p>
                 </div>
                 <div class="col-md-6 text-right">
+                
                     @await Html.PartialAsync("_SelectLanguagePartial")
-
+                
                 </div>
             </div>
         </footer>
